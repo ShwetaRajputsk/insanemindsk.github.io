@@ -177,7 +177,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 @media(max-width:760px){
-    ,home{
+    .home{
         background-position: center;
     }
 }
