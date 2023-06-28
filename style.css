@@ -176,6 +176,11 @@ section .title::after{
     background-position: top;
     font-family: 'Ubuntu', sans-serif;
 }
+@media(max-width:760px){
+    ,home{
+        background-position: center;
+    }
+}
 .home .max-width{
   width: 100%;
   display: flex;
