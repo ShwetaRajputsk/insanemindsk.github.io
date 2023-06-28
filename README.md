@@ -1,0 +1,1 @@
+# insanemindsk.github.io
