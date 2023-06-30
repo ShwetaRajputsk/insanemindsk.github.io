@@ -23,10 +23,15 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
-    });
+        $('.navbar .menu li a').click(function(event) {
+        // applying smooth scroll on menu items click with an offset
+        event.preventDefault();
+        var sectionId = $(this).attr("href");
+        var offset = 20; // Adjust this value to set the offset or buffer
+        var target = $(sectionId).offset().top - offset;
+    
+        $('html, body').animate({ scrollTop: target }, 150);
+      });
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
