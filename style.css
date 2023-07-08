@@ -54,7 +54,7 @@ section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 650;
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
@@ -204,7 +204,8 @@ section .title::after{
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a{
+.home .home-content a.button{
+    padding-top: 8%;
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -220,6 +221,30 @@ section .title::after{
     color: crimson;
     background: none;
 }
+.social-media a{
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    font-size: 1.2rem !important;
+    margin: -0.2rem!important;
+    margin-top: 1rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: 0.4s ease !important;
+    color: #fff !important;
+}
+.social-media a:hover{
+    color: crimson !important;
+    box-shadow: 0 0 0.5rem crimson !important;
+}
+@media (max-width: 768px) {
+    .social-media a {
+      margin: -0.5rem!important; /* Adjust the value as needed */
+      padding-left: 5% !important;
+      margin-top: 4.3% !important;
+    }
+  }
 
 /* about section styling */
 .about .title::after{
@@ -527,12 +552,6 @@ section .title::after{
   .brands .title::before {
     background: #111;
   }
-  
-  .brands .title::after,
-  .brands .title::after {
-    background: #fff;
-    content: "i have worked for";
-  }
   .brands .brands-carousel .card{
     background:none;
     border-radius: 6px;
@@ -590,17 +609,6 @@ section .title::after{
 .testimonials {
     color: #fff;
     background: #111;
-  }
-  
-  .testimonials .title::before,
-  .testimonials .title::before {
-    background: #fff;
-  }
-  
-  .testimonials .title::after,
-  .testimonials .title::after {
-    background: #111;
-    content: "what clients say";
   }
   
   .testimonials .testimonials-content .card {
