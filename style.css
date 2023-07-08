@@ -550,7 +550,7 @@ section .title::after{
   
   .brands .title::before,
   .brands .title::before {
-    background: #111;
+    background: #fff;
   }
   .brands .brands-carousel .card{
     background:none;
